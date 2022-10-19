@@ -7,12 +7,20 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+int a = 1;
+bool not = true;
 
-if (number % 2 == 0)
+Console.Write("числа чётные от 1 до + n ");
+while (a <= number)
 {
-    Console.Write("число чётное");
-}
-else 
-{
-    Console.Write("число нечётное");
+    if (a % 2 != 1)
+    {
+        Console.Write(a + ", ");
+        not = false;
+    }
+    a++;
+    if (not)
+    {
+        Console.Write("   остальные числа не является чётным ");
+    }
 }
