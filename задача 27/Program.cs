@@ -16,21 +16,22 @@ int SumDigit(int numDigit)
         sum += num % 10;
         num /= 10;
     }
-    return sum > 0 ? sum : 1;
+    return sum > 0 ? sum : 0;
 }
 int sumDigit = SumDigit(num);
 Console.WriteLine($"сумма цифр в числе = {sumDigit}");
 
-// не работает((
+
 //int SumDigit(int num)
 //{
-//  int sum = 0;
-//while (num > 0)
+//int num = 0;
+//  while (num > 0)
 //{
-//  num /= 10;
-//sum++;
+//  num = num % 10;
+////num = num/ 10;
+// num++;
 //}
-//return sum;
+//return num;/
 //}
 //int sumDigit = SumDigit(num);
-//Console.WriteLine($"сумма цифр в числе = {sumDigit}");
+//Console.WriteLine($"сумма цифр в числе = {num}");
